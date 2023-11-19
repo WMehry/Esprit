@@ -1,0 +1,10 @@
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let R of listResidences">
+        {{R.name}} 
+        <button class="btn btn-primary" (click)="showApartment(R.id)">Show Apartments</button>
+    </li>
+</ul>
+
+<ul *ngIf="list.length>0">
+<li *ngFor="let A of list">{{A.appartNum}}</li>
+</ul>
